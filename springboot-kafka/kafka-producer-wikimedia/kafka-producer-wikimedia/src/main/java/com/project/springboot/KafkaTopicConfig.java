@@ -10,7 +10,7 @@ public class KafkaTopicConfig {
 
     @Bean
     public NewTopic topic() {
-        return TopicBuilder.name("wikimedia_recentupdate")
+        return TopicBuilder.name("wikimedia_recentchange")
                 .partitions(3)
                 .build();
     }
